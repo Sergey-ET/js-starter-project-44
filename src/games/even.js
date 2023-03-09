@@ -16,9 +16,7 @@ const even = () => {
 
   const name = readlineSync.question('May I have your name? ');
 
-  console.log(
-    `Hello, ${name}!\nAnswer "yes" if the number is even, otherwise answer "no".`,
-  );
+  console.log(`Hello, ${name}!\nAnswer "yes" if the number is even, otherwise answer "no".`);
 
   for (let i = 1; i <= ROUND_QUANTITY; i += 1) {
     const number = getRandomIntInclusive(MIN_OF_RANGE, MAX_OF_RANGE);
@@ -27,10 +25,7 @@ const even = () => {
     console.log(`Question: ${number}`);
     const userAnswer = readlineSync.question('Your answer: ').toLowerCase();
 
-    if (
-      (isEven && userAnswer === 'yes')
-      || (!isEven && userAnswer === 'no')
-    ) {
+    if ((isEven && userAnswer === 'yes') || (!isEven && userAnswer === 'no')) {
       console.log('Correct!');
       counter += 1;
     } else {
@@ -39,9 +34,7 @@ const even = () => {
     }
   }
 
-  if (counter === ROUND_QUANTITY) {
-    console.log(`Congratulations, ${name}!`);
-  }
+  if (counter === ROUND_QUANTITY) console.log(`Congratulations, ${name}!`);
 };
 
 export default even;
