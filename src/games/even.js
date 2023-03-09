@@ -10,34 +10,31 @@ const even = () => {
   const ROUND_QUANTITY = 3;
   const MIN_OF_RANGE = 1;
   const MAX_OF_RANGE = 50;
+  let counter = 0;
+
+  console.log('Welcome to the Brain Games!');
+
   const name = readlineSync.question('May I have your name? ');
 
   console.log(
     `Hello, ${name}!\nAnswer "yes" if the number is even, otherwise answer "no".`,
   );
 
-  let counter = 0;
-
   for (let i = 1; i <= ROUND_QUANTITY; i += 1) {
     const number = getRandomIntInclusive(MIN_OF_RANGE, MAX_OF_RANGE);
+    const isEven = (number % 2 === 0);
+    const correctAnswer = isEven ? 'yes' : 'no';
     console.log(`Question: ${number}`);
     const userAnswer = readlineSync.question('Your answer: ').toLowerCase();
 
     if (
-      (number % 2 === 0 && userAnswer === 'yes')
-      || (number % 2 !== 0 && userAnswer === 'no')
+      (isEven && userAnswer === 'yes')
+      || (!isEven && userAnswer === 'no')
     ) {
       console.log('Correct!');
       counter += 1;
-    }
-
-    if (number % 2 !== 0 && userAnswer !== 'no') {
-      console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was 'no'.\nLet's try again, ${name}!`);
-      break;
-    }
-
-    if (number % 2 === 0 && userAnswer !== 'yes') {
-      console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was 'yes'.\nLet's try again, ${name}!`);
+    } else {
+      console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.\nLet's try again, ${name}!`);
       break;
     }
   }
