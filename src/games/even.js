@@ -10,7 +10,6 @@ const even = () => {
   const ROUND_QUANTITY = 3;
   const MIN_OF_RANGE = 1;
   const MAX_OF_RANGE = 50;
-  let counter = 0;
 
   console.log('Welcome to the Brain Games!');
 
@@ -25,16 +24,15 @@ const even = () => {
     console.log(`Question: ${number}`);
     const userAnswer = readlineSync.question('Your answer: ').toLowerCase();
 
-    if ((isEven && userAnswer === 'yes') || (!isEven && userAnswer === 'no')) {
-      console.log('Correct!');
-      counter += 1;
-    } else {
+    if (userAnswer !== correctAnswer) {
       console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.\nLet's try again, ${name}!`);
-      break;
+      return;
     }
+
+    console.log('Correct!');
   }
 
-  if (counter === ROUND_QUANTITY) console.log(`Congratulations, ${name}!`);
+  console.log(`Congratulations, ${name}!`);
 };
 
 export default even;
