@@ -5,3 +5,7 @@
 ### Code Climate Quality
 
 [![Maintainability](https://api.codeclimate.com/v1/badges/bd510ba4d4c3fad93f4b/maintainability)](https://codeclimate.com/github/Sergey-ET/js-starter-project-44/maintainability)
+
+### Even Check Game overview
+
+[![asciicast](https://asciinema.org/a/G11W9tWxBeakMRqUoWGFBei34.svg)](https://asciinema.org/a/G11W9tWxBeakMRqUoWGFBei34)
