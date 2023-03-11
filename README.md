@@ -9,3 +9,7 @@
 ### Even Check Game overview
 
 [![asciicast](https://asciinema.org/a/G11W9tWxBeakMRqUoWGFBei34.svg)](https://asciinema.org/a/G11W9tWxBeakMRqUoWGFBei34)
+
+### Calculator Game overview
+
+[![asciicast](https://asciinema.org/a/lOKWdKCsCX0i5jT52R0IomnPf.svg)](https://asciinema.org/a/lOKWdKCsCX0i5jT52R0IomnPf)
