@@ -13,3 +13,7 @@
 ### Calculator Game overview
 
 [![asciicast](https://asciinema.org/a/lOKWdKCsCX0i5jT52R0IomnPf.svg)](https://asciinema.org/a/lOKWdKCsCX0i5jT52R0IomnPf)
+
+### The Greatest Common Divisor Game overview
+
+[![asciicast](https://asciinema.org/a/BhgTB9YAaVsPgSho6EZ3zaoth.svg)](https://asciinema.org/a/BhgTB9YAaVsPgSho6EZ3zaoth)
