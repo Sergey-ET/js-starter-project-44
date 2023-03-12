@@ -21,3 +21,8 @@
 ### Arithmetic Progression Game overview
 
 [![asciicast](https://asciinema.org/a/UeKESmn7og2aSFPnLKjOmeYyK.svg)](https://asciinema.org/a/UeKESmn7og2aSFPnLKjOmeYyK)
+
+
+### Is Prime Number Game overview
+
+[![asciicast](https://asciinema.org/a/LVlJP0CIhHd3GMUm8xQx5I9at.svg)](https://asciinema.org/a/LVlJP0CIhHd3GMUm8xQx5I9at)
