@@ -17,7 +17,7 @@ const gameVerification = () => {
 
   const progressionArray = [getRandomIntInclusive(PROGRESSION_RANGE_MIN, PROGRESSION_RANGE_MAX)];
 
-  for (let i = 1; i < PROGRESSION_LENGTH; i += 1) {
+  for (let i = 1; i <= PROGRESSION_LENGTH - 1; i += 1) {
     progressionArray.push(progressionArray[i - 1] + progressionGap);
   }
 
