@@ -10,14 +10,14 @@ const gameVerification = () => {
   const PROGRESSION_GAP_MIN = 1;
   const PROGRESSION_GAP_MAX = 5;
   const PROGRESSION_INDEX_MIN = 0;
-  const PROGRESSION_INDEX_MAX = PROGRESSION_LENGTH;
+  const PROGRESSION_INDEX_MAX = PROGRESSION_LENGTH - 1;
 
   const progressionGap = getRandomIntInclusive(PROGRESSION_GAP_MIN, PROGRESSION_GAP_MAX);
   const progressionIndex = getRandomIntInclusive(PROGRESSION_INDEX_MIN, PROGRESSION_INDEX_MAX);
 
   const progressionArray = [getRandomIntInclusive(PROGRESSION_RANGE_MIN, PROGRESSION_RANGE_MAX)];
 
-  for (let i = 1; i <= PROGRESSION_LENGTH - 1; i += 1) {
+  for (let i = 1; i < PROGRESSION_LENGTH; i += 1) {
     progressionArray.push(progressionArray[i - 1] + progressionGap);
   }
 
